@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <h2 class="logo">Lashmi Narayanan</h2>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle">🌙</button>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Home -->
+    <section id="home" class="section hero">
+  <div class="hero-content">
+    <div class="profile-pic">
+      <img src="../images/MyPic.png" alt="Profile" class="profile-pic">
+    </div>
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Lashmi Narayanan</span></h1>
+      <p>A passionate Web Developer creating simple & modern designs.</p>
+      <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+  </div>
+</section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I am a passionate developer with a strong love for coding and designing. I specialize in building responsive, user-friendly websites using HTML, CSS, and JavaScript. My focus is on creating clean, modern interfaces that deliver seamless user experiences.<br><br>
+
+Over time, I’ve worked on projects ranging from simple landing pages to dynamic web applications. I enjoy solving problems, learning new technologies, and constantly improving my craft. Beyond coding, I have a keen eye for design, ensuring every website I build is not only functional but also visually appealing.<br><br>
+
+My goal is to combine creativity with technical skills to craft websites that leave a lasting impression. When I’m not coding, I love exploring new design trends, experimenting with animations, and contributing to open-source projects.</p>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+      <h2>My Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Project 1</h3>
+          <p>An Expence Tracker built with modern HTML & CSS.</p>
+        </div>
+        <div class="card">
+          <h3>Project 2</h3>
+          <p>Scientific Calculator using JavaScript & localStorage.</p>
+        </div>
+        <div class="card">
+          <h3>Project 3</h3>
+          <p>Portfolio redesign with responsive grid layout.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+        <p id="formFeedback" class="feedback"></p>
+      </form>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Your Name | Built with ❤️</p>
+    </footer>
+  </main>
+
+  <!-- Back to Top -->
+  <button id="backToTop">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
